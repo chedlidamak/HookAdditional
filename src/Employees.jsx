@@ -91,16 +91,20 @@ const Employees = () => {
       teamName: "TeamD",
     },
   ]);
-  
+
   function HandleTeamSelectionChnage(event) {
     setTeam(event.target.value);
   }
-  
+
   return (
     <main className="container">
       <div class="row justify-content-center mt-3 mb-3">
         <div class="col-6">
-          <select className="form-select form-select-lg" value={selectedTeam} onChange={HandleTeamSelectionChnage}>
+          <select
+            className="form-select form-select-lg"
+            value={selectedTeam}
+            onChange={HandleTeamSelectionChnage}
+          >
             <option value="TeamA">TeamA</option>
             <option value="TeamA">TeamB</option>
             <option value="TeamA">TeamC</option>
